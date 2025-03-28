@@ -8,8 +8,7 @@
         "bot",
         "python"
     ],
-    "repository": "https://github.com/yourusername/your-repo-name",
-    "success_url": "https://t.me/your_bot_username",
+    "repository": "https://github.com/IamElite/csncsfsub",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
