@@ -1,3 +1,2 @@
 telethon==1.32.1
-motor-asyncio==3.3.1
-python-dotenv==1.0.0
+motor==3.3.1
