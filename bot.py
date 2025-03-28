@@ -649,4 +649,5 @@ async def join_callback(event):
 
 # Modify check_forcesub to handle multiple channels
 async def check_forcesub(event):
+    pass
     # ... existing code ...
