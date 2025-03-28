@@ -1,0 +1,54 @@
+{
+    "name": "Force Subscribe Bot",
+    "description": "A Telegram bot that enforces channel subscription in groups",
+    "keywords": [
+        "telegram",
+        "force-subscribe",
+        "subscription",
+        "bot",
+        "python"
+    ],
+    "repository": "https://github.com/yourusername/your-repo-name",
+    "success_url": "https://t.me/your_bot_username",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "required": true
+        },
+        "MONGO_URL": {
+            "description": "MongoDB connection URL",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Your Telegram User ID (Owner)",
+            "required": true
+        },
+        "LOGGER_ID": {
+            "description": "Telegram Channel/Group ID for logs",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API HASH from my.telegram.org",
+            "required": true
+        },
+        "FSUB": {
+            "description": "Force Subscribe Channel IDs (space-separated)",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
