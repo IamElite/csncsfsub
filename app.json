@@ -12,31 +12,38 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
-            "required": true
+            "required": true,
+            "value": ""
         },
         "MONGO_URL": {
             "description": "MongoDB connection URL",
-            "required": true
+            "required": true,
+            "value": "mongodb+srv://teamdaxx123:teamdaxx123@cluster0.ysbpgcp.mongodb.net/?retryWrites=true&w=majority"
         },
         "OWNER_ID": {
-            "description": "Your Telegram User ID (Owner)",
-            "required": true
+            "description": "Your Telegram User ID",
+            "required": true,
+            "value": "1679112664"
         },
         "LOGGER_ID": {
-            "description": "Telegram Channel/Group ID for logs",
-            "required": true
+            "description": "Channel/Group ID for logs",
+            "required": true,
+            "value": "-1002168886769"
         },
         "API_ID": {
             "description": "Your API ID from my.telegram.org",
-            "required": true
+            "required": true,
+            "value": "14050586"
         },
         "API_HASH": {
-            "description": "Your API HASH from my.telegram.org",
-            "required": true
+            "description": "Your API Hash from my.telegram.org",
+            "required": true,
+            "value": "42a60d9c657b106370c79bb0a8ac560c"
         },
         "FSUB": {
-            "description": "Force Subscribe Channel IDs (space-separated)",
-            "required": false
+            "description": "Force Subscribe Channel IDs (Optional)",
+            "required": false,
+            "value": "-1002053640388"
         }
     },
     "buildpacks": [
